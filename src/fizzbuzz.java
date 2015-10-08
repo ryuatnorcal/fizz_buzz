@@ -105,13 +105,13 @@ public class fizzbuzz {
 	}
 	public void turn(){
 		for(int i = 1; i<= getMax(); i++ ){
-			if(i == getFizz()){
+			if(i % getFizzBuzz() == 0){
 				System.out.print("F");
 			}
-			else if (i == getBuzz()){
+			else if (i % getBuzz() == 0){
 				System.out.print("B");
 			}
-			else if (i == getFizzBuzz()){
+			else if (i % getFizz() == 0){
 				System.out.print("FB");
 			}
 			else{
